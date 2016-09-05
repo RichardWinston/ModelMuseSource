@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Summary</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Summary</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">ModelMuse provides a graphical user interface for creating the flow and transport input file for PHAST and the input files for MODFLOW. &#160;It uses objects (points, lines, and polygons) and formulas to define the spatial distribution of aquifer properties in a convenient fashion. &#160;ModelMuse can also be used to create the grids required by PHAST and MODFLOW and to edit nonspatial data required by PHAST and MODFLOW. &#160;The use of formulas has several benefits: (1) objects can have a third dimension that varies; (2) complicated distributions of values in data sets can be easily specified; and (3) changes to the grid can be made without requiring the user to reenter data. &#160;Just as the spatial distribution of data is independent of the grid, the temporal distribution of data in boundary conditions is independent of the temporal discretization of the model. &#160;ModelMuse combines all the times specified throughout the model to determine the proper temporal discretization of the model. &#160;ModelMuse allows the user to display the spatial input graphically. &#160;This display makes it easier for the user to avoid and detect errors in the input, thus making the modeling process more efficient and accurate. &#160;ModelMuse has built-in methods for importing data from DXF files and Shapefiles. &#160;It also has several built-in interpolation methods.</text></para>
+  </body>
+</topic>

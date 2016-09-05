@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{F6E46FAC-B26C-402E-AC3A-CFF7ECB591B0}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="XBasePkgXE2.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="XBasePropEdXE2.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="XBasePkgXE2">
+			<MSBuild Projects="XBasePkgXE2.dproj"/>
+		</Target>
+		<Target Name="XBasePkgXE2:Clean">
+			<MSBuild Projects="XBasePkgXE2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="XBasePkgXE2:Make">
+			<MSBuild Projects="XBasePkgXE2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="XBasePropEdXE2">
+			<MSBuild Projects="XBasePropEdXE2.dproj"/>
+		</Target>
+		<Target Name="XBasePropEdXE2:Clean">
+			<MSBuild Projects="XBasePropEdXE2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="XBasePropEdXE2:Make">
+			<MSBuild Projects="XBasePropEdXE2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="XBasePkgXE2;XBasePropEdXE2"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="XBasePkgXE2:Clean;XBasePropEdXE2:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="XBasePkgXE2:Make;XBasePropEdXE2:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

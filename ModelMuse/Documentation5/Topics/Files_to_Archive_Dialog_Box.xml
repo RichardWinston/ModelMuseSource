@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="rbwinst-pr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Files to Archive Dialog Box</title>
+  <keywords>
+    <keyword translate="true">archive</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para style="margin-bottom:10px; line-height:2.0;"><text styleclass="Heading1" translate="true">Files to Archive Dialog Box</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Files to Archive</text><text styleclass="Normal" translate="true"> dialog box shows the names of files that should be saved in an archive of the model. &#160;It is displayed by selecting </text><text styleclass="Normal" style="font-weight:bold;" translate="true">File|Files to Archive...</text><text styleclass="Normal" translate="true"> &#160;ModelMuse keeps track of many of the files that need to be archived. &#160;For example all the model input files will be listed here as well as Shapefiles from which the user has imported information. &#160;If there are other files that should be archived that are not listed, use the </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Files to Archive</text><text styleclass="Normal" translate="true"> dialog box to keep track of where they are. &#160;</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The files are displayed in a tree view control in separate categories. The individual files can be dragged from one category to another. In models created with ModelMuse version 7.3.1 or earlier, all the input and output files will be listed under the model input files, the user can move them to the correct categories. If a file that should be archived does not exist at the recorded location, its name will be displayed with a red font.</text></para>
+    <para styleclass="Normal"><anchor id="DefaultArchiveName" styleclass="Normal"></anchor><text styleclass="Normal" translate="true">If the </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Create archive</text><text styleclass="Normal" translate="true"> button is clicked, the user will be prompted to enter a file name for an archive of the model. &#160;The archive will be a .zip file containing all the files listed on the </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Files to Archive</text><text styleclass="Normal" translate="true"> dialog box. &#160;By default, the archive name will be the name of the ModelMuse file with the date appended to the name and the extension changed to .zip.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">There is also a link to a USGS policy memo for archiving groundwater models. This provides guidance as to what should be included in the archive.</text></para>
+  </body>
+</topic>

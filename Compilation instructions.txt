@@ -1,0 +1,260 @@
+1. Compiling and installing JCL and JVCL on Delphi 10.1 Berlin Starter edition
+
+Install Git for Windows
+Install TortoiseGit
+Create a folder named "Jedi" and open that directory in Windows Explorer. For the remainder of these instructions, that folder is assumed to be directly under the C drive.
+Copy the following line to the clipboard and then select Git Clone... from the Windows Context menu.
+git clone git://github.com/project-jedi/jcl.git jcl cd jcl git submodule update --init ```
+Copy the following line to the clipboard and then select Git Clone... from the Windows Context menu.
+git clone git://github.com/project-jedi/jvcl.git jvcl ```
+
+
+1A. Starter edition instructions 
+Because the starter edition does not include the command-line compiler, the process for installing the JCL and JVCL in Delphi is more complicated than in the instructions for the Professional Edition in 1B.
+
+Place the jcld24win32.inc file included with these instructions in.
+C:\Jedi\jcl\jcl\source\include\jcld24win32.inc
+
+To add a folder to the library path, select "Tools|Options".
+In the Options dialog box, select "Environmet Options|Delphi Options|Library".
+Click the button next to Library path.
+In the Directories dialog box select a directory and click the Add button.
+
+Assuming the Jedi directory was under the C drive, add the following to the library path
+
+C:\Jedi\jcl\jcl\source
+C:\Jedi\jcl\jcl\source\common
+C:\Jedi\jcl\jcl\source\jedi
+C:\Jedi\jcl\jcl\source\vcl
+C:\Jedi\jcl\jcl\source\windows
+C:\Jedi\jcl\jcl\source\include
+C:\Jedi\jcl\jcl\source\include\jedi
+C:\Jedi\jvcl\jvcl\run
+C:\Jedi\jvcl\jvcl\design
+C:\Jedi\jvcl\jvcl\common
+C:\Jedi\jvcl\jvcl\resources
+
+Add the jcl dcp output directory to library path
+C:\Jedi\jcl\jcl\lib\d24\win32
+
+Check to make sure the file jedi.inc is in one of the above directories. It will probably be located at 
+C:\Jedi\jcl\jcl\source\jedi\jedi.inc
+
+In Delphi, open the C:\Jedi\jcl\jcl\packages\JclPackagesD240.groupproj group project.
+Select "Project|Build All Projects".
+
+The Delphi Project Manager is on the right side of the main Delphi window. 
+It contains a list of all the projects in the JclPackagesD240 group project. 
+You must install each of the following packages in the Delphi IDE (Integrated Development Environment).
+
+JclBaseExpert
+JclDebugExpert
+JclFavoriteFoldersExpert
+JclProjectAnalysisExpert
+JclRepositoryExpert
+JclSIMDViewExpert
+JclStackTraceViewerExpert
+JclVersionControlExpert
+
+(Note that the names of all of the packages that can be installed end with "Expert".)
+
+These packages are all the ones that have the option to enable them to be installed in the Delphi IDE. Such packages are called "Design Time Packages". 
+
+To install a package in the Delphi IDE, double-click on it to select it and then right-click and select "Install".
+
+Close the JclPackagesD240 group project.
+Open the C:\Jedi\jvcl\jvcl\packages\D24 Packages.groupproj group project.
+
+If you are using the Delphi Starter Edition, remove the following packages from the Jvcl group project because you need at least the Professional Edition to compile them.
+C:\Jedi\jvcl\jvcl\packages\D24\JvDB.dproj
+C:\Jedi\jvcl\jvcl\packages\D24\JvDBDesign.dproj
+C:\Jedi\jvcl\jvcl\packages\D24\JvDotNetCtrls.dproj
+C:\Jedi\jvcl\jvcl\packages\D24\JvDotNetCtrlsDesign.dproj
+To remove a project from the group project, select it and then right-click and select "Remove".
+
+Select "Project|Build All Projects".
+
+As with the JCL, some of the packages need to be installed in the Delphi IDE.
+Install the design-time packages as listed below.
+
+JvCoreDesign.dproj
+JvSystemDesign.dproj
+JvStdCtrlsDesign.dproj
+JvControlsDesign.dproj
+JvCmpDesign.dproj
+JvCustomDesign.dproj
+JvDlgsDesign.dproj
+JvCryptDesign.dproj
+JvMMDesign.dproj
+JvNetDesign.dproj
+JvAppFrmDesign.dproj
+JvPascalInterpreterDesign.dproj
+JvBandsDesign.dproj
+JvPluginSystemDesign.dproj
+JvJansDesign.dproj
+JvGlobusDesign.dproj
+JvPrintPreviewDesign.dproj
+JvPageCompsDesign.dproj
+JvWizardsDesign.dproj
+JvTimeFrameworkDesign.dproj
+JvHMIDesign.dproj
+JvManagedThreadsDesign.dproj
+JvXPCtrlsDesign.dproj
+JvDockingDesign.dproj
+JvRuntimeDesignDesign.dproj
+
+1B. Professional Edition Instructions
+Check to make sure the file jedi.inc is in the libary path. It will probably be located at 
+C:\Jedi\jcl\jcl\source\jedi\jedi.inc
+
+Then start install.bat as administrator. To avoid the "brcc32.exe not found" error uncheck all following checkboxes in the installation GUI:
+
+"Add JCL to C++ include path"
+
+"Copy HPP files to configured HPP directory"
+
+'Check HPP files"
+
+Double-click D:\Jedi\jcl\jcl\install.bat to install the JCL. An installation program will be built and run. 
+
+It may be necessary to recompile dcc32exe.exe in C:\Jedi\jvcl\jvcl\packages\bin. If that is neccessary, open C:\Jedi\jvcl\jvcl\packages\bin\dcc32exe.dpr and select "Project|Compile dcc32exe" or "Project|Build dcc32exe". 
+
+Double-click D:\Jedi\jvcl\jvcl\install.bat to install the JVCL. An installation program will be built and run. 
+
+2. Installing Abbrevia components.
+Make sure you have an internet connection.
+Select "Tools|GetIt Package Manager". It is the first of the free packages in the GetIt Package Manager.
+Locate Abbrevia 10.1 and click the "Install" button beneath it.
+
+Note: The source code for Abbrevia will be downloaded to "C:\Users\<user name>\Documents\Embarcadero\Studio\18.0\CatalogRepository\Abbrevia-10.1"
+where <user name> is the name of the account used when installing the Abbrevia components.
+
+3. Install VirtualTree components.
+Make sure you have an internet connection.
+Select "Tools|GetIt Package Manager"
+Locate Virtual Tree for VCL 6.1 and click the "Install" button beneath it. It is the last of the free packages in the GetIt Package Manager.
+
+Note: The source code for VirtualTrees will be downloaded to "C:\Users\<User name>\Documents\Embarcadero\Studio\18.0\CatalogRepository\VirtualTreeView-6.1\Packages\Delphi"
+where <user name> is the name of the account used when installing the VirtualTrees components.
+
+4. Graphics 32 go to http://graphics32.org/wiki/ and click "DownLoads". This will redirect you to 
+https://sourceforge.net/projects/graphics32/files/graphics32/
+You can also download directly from
+https://sourceforge.net/projects/graphics32/
+Extract the contents of the graphics32 zip file, being sure to maintain the directory structure.
+
+Open GR32_RSXE5.dproj in the Graphics32/Packages directory. It will create a new project group named "ProjectGroup1". Right click on the project group in the Project Manager and select "Save Project Group As" and save the project group with a different name such as Gr32Group_Delphi10_1Berlin. It is a good idea to include the version of delphi used in the names of project groups and packages because if you have more than one version of Delphi installed the package names must be different in each version of Delphi.
+
+Right-click on the project group and select "Add Existing Project..." Select GR32_DSGN_RSXE5.dproj. Both of these packages, GR32_RSXE5 and GR32_DSGN_RSXE5 are meant for an earlier version of Delphi. Right click on each of them and save them with new names such as GR32_Delphi10_1Berlin and GR32_DSGN_Delphi10_1Berlin.
+
+Select "File|Save All".
+
+Add the Graphics32 directory to the Delphi Library Path
+
+In the Project Manager, double-click on GR32_Image.pas to open it.
+
+Comment out the line MouseUp(mbLeft, [], 0, 0); in TCustomImage32.DblClick. That line is on line 1321. A line may be commented out by putting "//" at the beginning of the line so that it looks like
+//  MouseUp(mbLeft, [], 0, 0);
+
+
+In the Project Manager, double-click on GR32_VectorMaps.pas to open it.
+
+Locate the line
+procedure TVectorMap.SaveToFile(const FileName: string);
+
+Before that line insert the following lines.
+
+{$IFNDEF DEBUG}
+  {$IFDEF VER310}
+    {$OPTIMIZATION OFF}
+  {$ENDIF}
+{$ENDIF}
+
+Locate the line
+procedure TVectorMap.SetFloatVector(X, Y: Integer; const Point: TFloatVector);
+
+Before that line insert the following lines
+{$IFNDEF DEBUG}
+  {$IFDEF VER310}
+    {$OPTIMIZATION ON}
+  {$ENDIF}
+{$ENDIF}
+
+The net result of these changes is to turn off optimization for TVectorMap.SaveToFile. If Optimization is not turned off Delphi 10.1 Berlin will not be able to compile this unit.
+
+Open the file GR32_Compiler.inc. This file is not listed in the program manager but is included in the Graphics32 directory.
+Locate the following lines
+
+{$IFDEF FPC}
+  {$DEFINE COMPILERFPC}
+{$ENDIF}
+
+AFter those lines insert the following lines
+
+{$IFDEF CONDITIONALEXPRESSIONS}
+  {$IF CompilerVersion > 26}
+    {$DEFINE COMPILERXE5}
+  {$IFEND}
+  {$IFNDEF BCB}
+    {$DEFINE DELPHIXE5}
+  {$ELSE}
+    {$DEFINE BCBXE5}
+  {$ENDIF}
+{$ENDIF}
+
+Expand the "Requires" in GR32_DSGN_Delphi10_1Berlin. Right click on GR32_RSXE5.dcp and select "Remove from Project".
+
+Select "Project|Build All"
+
+Right click on GR32_DSGN_Delphi10_1Berlin and select "Install".
+
+Select "File|Save All"
+
+5. Install GLScene
+GlScene can be downloaded from www.glscene.org
+http://sourceforge.net/project/showfiles.php?group_id=29749
+You will download a file named SetupGLSceneVCL_v.1.4.1_for_RAD10_Seattle.exe. This program does not install GLScene in the Delphi IDE, it just unpacks the files for GLScene on your computer.
+
+Add the GLScene\Source directory and each of its subdirectories to the Delphi Library path.
+
+Open GLScene.inc in the GLScene\Source directory. Change line 36 from 
+{.$DEFINE GLS_Graphics32_SUPPORT}
+to
+{$DEFINE GLS_Graphics32_SUPPORT}
+
+Open the GLScene group project in the GLScene/Packages directory.
+
+Select "Project|Build All". A dialog box will appear saying it neccessary to make the following changes "Add GR32_DSGN_Delphi10_1Berlin." For each of them, click OK.
+
+Right-click on each of the "DesignTime" packages and select "Install".
+
+Select "File|Save All"
+
+6. Install MadExcept.
+MadExcept generates bug reports for bugs that cause exceptions in a program when it is running. MadExcept can send a bug report to the developer of the program with information about the bug. ModelMuse can be compiled without MadExcept. If you make modifications to ModelMuse you should either not install MadExcept or when compiling ModelMuse, you should ensure that any bug reports are sent to you.
+
+Download MadCollection.exe from http://madshi.net/madExceptDescription.htm
+Note that you can install MadExcept for non-commercial use for no charge.
+
+Run MadCollection.exe, select "MadExcept 4", and click "Install". Respond to the prompts as appropriate.
+
+7. Install additional components
+
+Add all of the folders in the Components directory of the ModelMuse source code to the Delphi Library Path.
+
+Each of the folders execpt GraphicEX and xyGraph will contain a package file and possibly a project file. If there is a project file, open it. If not open the package file. Install each package. If there are multiple package files, open the one appropriate for your version of Delphi. If there not a package file for your version of Delphi, open the one for the most recent version of Delphi for which there is a package file and save it with a name appropriate for your version of Delphi.
+
+If you get an error about an .oatres file not being found, select "Project|View Source". Then locate the line
+{$R *.otares}
+and delete it.
+
+In ButtonEdit, you may need to open "Requires" and remove a reference to VirtualTreesR.
+
+In ZoomBox2 in the QZoomBox directory, you may need to open "Requires" and remove a reference to GR32_RSXE2.dcp
+
+In XbasePropEditDelphi10_1Berlin, you may need to open "Requires" and remove a reference to XBasePkgXE2.dcp. Then when you install it, it will add a reference to XBaseDelphi10_1Berlin.dcp.
+
+Once all the components have been installed in the Delphi IDE, you can open the ModelMuse.dproj file and select Project, Build ModelMuse to build it.
+
+
+

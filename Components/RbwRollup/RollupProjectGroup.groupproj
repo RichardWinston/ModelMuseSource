@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{CC0EB1FB-D3C6-4726-A7D9-130FA66ABF35}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="RbwRollupPanelPkg.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Example\RollupExample.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="RbwRollupPanelPkg">
+			<MSBuild Projects="RbwRollupPanelPkg.dproj"/>
+		</Target>
+		<Target Name="RbwRollupPanelPkg:Clean">
+			<MSBuild Projects="RbwRollupPanelPkg.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RbwRollupPanelPkg:Make">
+			<MSBuild Projects="RbwRollupPanelPkg.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RollupExample">
+			<MSBuild Projects="Example\RollupExample.dproj"/>
+		</Target>
+		<Target Name="RollupExample:Clean">
+			<MSBuild Projects="Example\RollupExample.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RollupExample:Make">
+			<MSBuild Projects="Example\RollupExample.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="RbwRollupPanelPkg;RollupExample"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="RbwRollupPanelPkg:Clean;RollupExample:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="RbwRollupPanelPkg:Make;RollupExample:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="rbwinst-pr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Viewing Model Results</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Viewing Model Results</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">To view the spatial distribution of head, drawdown, or flows from a MODFLOWor SUTRA model, select </text><text styleclass="Normal" style="font-weight:bold;" translate="true">File|Import|Model Results...</text><text styleclass="Normal" translate="true"> &#160;Then select the file containing the results that are to be viewed. &#160;With MODFLOW models, the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Select_Results_to_Import_Dialog_Box" styleclass="Normal" style="font-weight:bold;" translate="true">Select Model Results to Import</link><text styleclass="Normal" translate="true"> dialog box will appear. With SUTRA &#160;models, the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Import_SUTRA_Model_Results_Dia" styleclass="Normal" style="font-weight:bold;" translate="true">Import SUTRA Model Results</link><text styleclass="Normal" translate="true"> dialog box will apperal. In either dialog box, select one or more of the results. &#160;The results will be imported into ModelMuse and can be used to </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Color_Grid_Dialog_Box" styleclass="Normal" translate="true">color the grid</link><text styleclass="Normal" translate="true"> just as can be done with any other data set. &#160;Spatial data from MODFLOW, PHAST, and SUTRA can be displayed in Model Viewer (Hsieh and Winston, 2002). Time-series plots of data from MODFLOW can be displayed with GW_Chart (Winston, 2000).</text></para>
+  </body>
+</topic>

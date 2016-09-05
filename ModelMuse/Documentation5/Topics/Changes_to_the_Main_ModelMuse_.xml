@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="rbwinst-pr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Changes to the Main ModelMuse Window</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Changes to the Main ModelMuse Window</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">With MODFLOW and PHAST models, —the main ModelMuse window has four panes: a top view, a front view, a side view, and a three-dimensional (3D) view. The front and side views show cross sections parallel to the sides of the finite-difference grid. The finite-difference grid is rectangular in plan view with vertical sides, so it makes sense to display it from the front and side views. SUTRA meshes can be any shape in plan view, so they do not have front and side views. With SUTRA models, the side view is eliminated and the front view can show cross sections at arbitrary angles and positions. Although the name “front view” is now something of a misnomer when used with SUTRA models, there is no better term that can be used for both models with grids and those with meshes; changing the name would only create confusion when used with models with grids. The selection cube on the front view displays the position of the cross section relative to the width of the mesh perpendicular to the cross section.</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The Grid menu is replaced by a Mesh menu when ModelMuse is being used with a SUTRA model. The Mesh menu contains items used to create or edit the mesh and to display relevant information. Details are included in the help system for ModelMuse.</text></para>
+  </body>
+</topic>

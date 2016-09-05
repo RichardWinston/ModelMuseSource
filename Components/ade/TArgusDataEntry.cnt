@@ -1,0 +1,32 @@
+; This contents file was created with HelpScribble 5.5.2
+; Registered to: Leonard F. Konikow
+
+:BASE TArgusDataEntry.hlp
+:TITLE TArgusDataEntry
+:INCLUDE DELPHI3.CFG
+1 EArgusMinMaxError exception
+2 EArgusMinMaxError exception Reference=Scribble1010
+1 TArgusDataEntry component
+2 TArgusDataEntry component Reference=Scribble1100
+2 Properties
+3 ChangeDisabledColor=Scribble1110
+3 CheckMax=Scribble1115
+3 CheckMin=Scribble1120
+3 DataType=Scribble1125
+3 DisabledColor=Scribble1130
+3 EnabledColor=Scribble1135
+3 Max=Scribble1140
+3 Min=Scribble1145
+3 Output=Scribble1150
+3 Style=Scribble1155
+3 Text=Scribble1160
+2 Methods
+3 ChangeTextToBoolean=Scribble1165
+3 ChangeTextToInteger=Scribble1170
+3 ChangeTextToReal=Scribble1175
+3 CheckRange=Scribble1180
+2 Events
+3 OnDataTypeChanged=Scribble1185
+3 OnExceededBounds=Scribble1190
+3 OnExceedingBounds=Scribble1195
+3 OnStyleChanged=Scribble1200

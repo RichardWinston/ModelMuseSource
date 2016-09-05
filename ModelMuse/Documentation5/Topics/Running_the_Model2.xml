@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="rbwinst-pr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Executing the Model</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Executing the Model</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">To execute the model, select </text><text styleclass="Normal" style="font-weight:bold;" translate="true">File|Export|PHAST Input File </text><image src="RunButton.bmp" scale="100.00%" styleclass="Image Caption"><title translate="true">Export PHAST input file button</title></image><text styleclass="Image Caption" translate="true">,</text><text styleclass="Normal" translate="true">&#32;</text><text styleclass="Normal" style="font-weight:bold;" translate="true">File|Export|MODFLOW Input Files ,</text><text styleclass="Image Caption" translate="true">&#32;</text><text styleclass="Normal" translate="true">or </text><text styleclass="Normal" style="font-weight:bold;" translate="true">File|Export|SUTRA Input Files </text><image src="RunButton.bmp" scale="100.00%" styleclass="Image Caption"><title translate="true">Export MODFLOW input files button</title></image><text styleclass="Normal" translate="true">. &#160;A Save dialog box will appear in which the user is prompted to save either the PHAST transport data file, the MODFLOW name file, or the SUTRA input file. &#160;An </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Execute model</text><text styleclass="Normal" translate="true"> checkbox will appear near the lower left corner of the dialog box. &#160;If it is checked, the model will be executed after the input files have been created. &#160;To execute a PHAST model, the user may need to create the PHAST chemistry data file too. &#160;ModelMuse does not create the PHAST chemistry data file. &#160;When executing a MODFLOW model, the listing file will be opened in Notepad when the model has finished executing.</text></para>
+  </body>
+</topic>

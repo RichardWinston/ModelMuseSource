@@ -1,0 +1,45 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 202
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -29
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 35
+  object rrl1: TRbwRollupPanel
+    Left = 0
+    Top = 0
+    Width = 340
+    Height = 202
+    Align = alLeft
+    Caption = 'rrl12'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentShowHint = False
+    ShowCaption = False
+    ShowHint = True
+    TabOrder = 0
+    Collapsed = False
+    RollupCaption = 'test2ab'
+    LabelWidth = 40
+    ExpandedWidth = 300
+    object lbl1: TLabel
+      Left = 96
+      Top = 40
+      Width = 46
+      Height = 35
+      Caption = 'lbl1'
+    end
+  end
+end

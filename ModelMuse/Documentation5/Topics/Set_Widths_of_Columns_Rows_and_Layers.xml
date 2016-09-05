@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="rbwinst-pr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Set Widths of Columns, Rows, and Layers Dialog Box</title>
+  <body>
+    <header>
+      <para style="margin-bottom:10px; line-height:2.0;"><text styleclass="Heading1" translate="true">Set Widths of Columns, Rows, and Layers Dialog Box</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Set Widths of Columns, Rows, and Layers</text><text styleclass="Normal" translate="true"> dialog box is used for specifying the exact widths of columns, rows, and layers. &#160;To display the dialog box, the user selects </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Grid|Set Width...</text><text styleclass="Normal" translate="true"> or clicks the </text><text styleclass="Normal" style="font-weight:bold;" translate="true">Set width</text><text styleclass="Normal" translate="true"> button </text><image src="SetElementWidth.png" scale="100.00%" styleclass="Image Caption"><title translate="true">Set Width button</title></image><text styleclass="Normal" translate="true">. Next the user clicks and drags with the mouse to select one or more columns, rows, or layers on the top, front, or side view of the model. &#160;When the mouse is released, the dialog box will appear. &#160;The average width of the elements will be displayed. &#160;The user should decide whether to edit the columns, rows, or layers &#160;and check the corresponding checkboxes. &#160;The user may then edit the range of columns, rows, or layers to be edited and set the desired width. &#160;Clicking the </text><text styleclass="Normal" style="font-weight:bold;" translate="true">OK</text><text styleclass="Normal" translate="true"> button will cause the element size of the selected columns, rows, and layers to be changed.</text></para>
+    <para styleclass="Normal"><conditional-text type="IF" value="FOOTPRINT"/><text styleclass="Normal" translate="true">This method can not be used with Footprint grids because the cell spacing is required to be uniform.</text><conditional-text type="END"/></para>
+  </body>
+</topic>
